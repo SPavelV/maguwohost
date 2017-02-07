@@ -1,0 +1,20 @@
+block head
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    link(rel="shortcut icon", href="images/favicon.ico" type="image/png")
+
+    block title
+      title Шаблон сборки проекта
+    block styles
+      // build:css styles/vendor.css
+      // bower:css
+      link(rel='stylesheet', href='/bower_components/magnific-popup/dist/magnific-popup.css')
+      // endbower
+      // endbuild
+      link(href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Lato:700|Raleway:400,600,700",
+           rel="stylesheet")
+      link(rel="stylesheet" href="styles/main.css")

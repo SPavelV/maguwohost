@@ -1,0 +1,23 @@
+%container {
+  max-width: 1170px;
+  padding: 0 $grid-gutter-width/2;
+  margin: 0 auto;
+}
+
+.page {
+
+  &__header,
+  &__check-domen,
+  &__services,
+  &__features,
+  &__clients,
+  &__price-request,
+  &__footer {
+    @extend %container;
+  }
+
+  &__header{
+
+  }
+
+}

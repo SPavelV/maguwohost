@@ -1,0 +1,79 @@
+//
+// Variables
+// --------------------------------------------------
+
+//==Colors
+//
+//## Brand colors.
+
+$yellow:                #ffe13e;
+$blue:                  #202242;
+
+$first-color:           $blue;
+$second-color:          $yellow;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $first-color !default;
+
+//** Global textual link color.
+$link-color:            $blue !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$serif:                   'Arvo', serif;//Rockwel;
+$sans-serif:              'Raleway', sans-serif;
+$sans-serif-second:       'Lato', sans-serif;
+//$monospace:               monospace;
+
+$first-font:              $sans-serif;
+$second-font:             $serif;
+$fird-font:               $sans-serif-second;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+//$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+//$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+//$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+//$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+//$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+//$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+//$font-size-h5:            $font-size-base !default;
+//$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+//
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+//
+////** By default, this inherits from the `<body>`.
+//$headings-font-family:    inherit !default;
+//$headings-font-weight:    500 !default;
+//$headings-line-height:    1.1 !default;
+//$headings-color:          inherit !default;
