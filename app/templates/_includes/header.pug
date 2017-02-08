@@ -6,13 +6,14 @@ block header
       .head__logo
         .logo
           a(href="#", role="banner")
-            img(src="images/site-logo.png", alt="логотип")
-            span Maguwo Host
+            .logo__img
+              img(src="images/logo.png", alt="логотип")
+            span Maguwo<b>Host</b>
 
       .head__menu
         ul.main-menu(role="navigation")
           li
-            a.main-menu__active-item(href="") Home
+            a.main-menu__active-link(href="", disabled) Home
           li
             a(href="") About
           li

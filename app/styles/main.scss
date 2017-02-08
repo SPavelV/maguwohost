@@ -2,3 +2,98 @@
 @import 'variables';
 @import 'grid';
 @import 'types';
+
+.head {
+  @extend %container;
+  min-height: 148px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: auto;
+    flex: 1 1 230px;
+  }
+
+  &__menu {
+    display: flex;
+    flex: 2 2 458px;
+    flex-flow: row nowrap;
+  }
+
+  &__contact {
+    display: flex;
+    flex: 1 1 330px;
+    flex-flow: row nowrap;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+
+  a {
+    display: flex;
+    color: $first-color;
+    font-family: $serif;
+    font-size: em(24px);
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 26px;
+    height: 32px;
+    margin-right: 18px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}
+
+.main-menu {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+
+  li {
+  }
+
+  a {
+    font-family: $sans-serif;
+    font-size: em(16px);
+    line-height: em(24px);
+    font-weight: $f-normal;
+    color: $first-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .main-menu__active-link {
+    color: $second-color;
+    font-weight: $f-bold;
+
+    &:hover {
+      text-decoration: none;
+      cursor: default;
+    }
+  }
+}
+

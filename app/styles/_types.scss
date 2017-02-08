@@ -11,15 +11,15 @@
 //  font-style: normal;
 //}
 
-// function translation of pixels em
+ //function translation of pixels em
 
-//@function em($pixels, $context: $font-size-base) {
-//  @return #{$pixels/$context}em;
-//}
-//
-//@function calc-em($target-px, $context) {
-//  @return($target-px / $context) * 1em;
-//}
+@function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+@function calc-em($target-px, $context) {
+  @return($target-px / $context) * 1em;
+}
 //
 //
 //body {
